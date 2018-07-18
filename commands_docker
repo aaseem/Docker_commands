@@ -1,0 +1,57 @@
+curl -fsSL get.docker.com -o get-docker.sh
+
+sh get-docker.sh
+
+>after successful completion of above command in output 
+get command who add user to docker group.
+
+curl -L https://github.com/docker/machine/releases/download/v0.12.2/docker-machine-`uname -s`-`uname -m` > /tmp/docker-machine &&
+> chmod +x /tmp/docker-machine &&
+> sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+
+sudo -i  
+
+curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+
+docker-compose version
+
+
+sudo apt install git
+
+git clone https://github.com/BretFisher/udemy-docker-mastery.git
+
+docker info
+docker version
+
+docker container run --publish 80:80 nginx
+
+docker container run --publish 80:80 --detach nginx   ---to run in background
+
+
+docker container ls(docker ps --old syntax)
+
+docker container ls -a
+
+
+docker container run --publish 80:80 --detach nginx --name webhost nginx  ---to name container
+
+sudo apt-get install chrome-browser ---extra
+
+
+docker container top webhost
+
+docker container rm 303 2e13 5677 ----last argumnets are container ids
+
+
+docker container rm -f 02af  ---forcefully remove running container..
+
+docker run --name mongo -d mongo ---
+
+ps aux
+
+docker stop mongo
+docker start mongo
+
+I have clone 
